@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student xmlns="http://www.test.com/">
+	<sno>456</sno>
+	<sname>Jhon</sname>
+	<course>4500.0</course>
+	<address>
+		<city>Plymouth</city>
+		<state>MN</state>
+		<zipcode>55447</zipcode>
+	</address>
+</Student>

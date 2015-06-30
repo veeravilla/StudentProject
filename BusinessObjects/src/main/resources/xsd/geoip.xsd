@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.test.com/"
+	xmlns:tns="http://www.test.com/" elementFormDefault="qualified">
+	
+
+   <element name="Response">
+	    <complexType>
+	    	<sequence>
+	    		<element name="IP" type="string"></element>
+	    		<element name="CountryCode" type="string"></element>
+	    		<element name="CountryName" type="string"></element>
+	    		<element name="RegionCode" type="string"></element>
+	    		<element name="RegionName" type="string"></element>
+	    		<element name="City" type="string"></element>
+	    		<element name="ZipCode" type="string"></element>
+	    		<element name="TimeZone" type="string"></element>
+	    		<element name="Latitude" type="string"></element>
+	    		<element name="Longitude" type="string"></element>
+	    		<element name="MetroCode" type="string"></element>
+	    	</sequence>
+	    </complexType>
+    </element>
+    
+    
+  
+</schema>

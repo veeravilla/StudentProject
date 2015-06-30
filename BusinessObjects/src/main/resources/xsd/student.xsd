@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.test.com/"
+	xmlns:tns="http://www.test.com/" elementFormDefault="qualified">
+	
+
+   <element name="Student">
+	    <complexType>
+	    	<sequence>
+	    		<element name="sno" type="int"></element>
+	    		<element name="sname" type="string"></element>
+	    		<element name="course" type="double"></element>
+	    		<element name="address" type="tns:Address"></element>
+	    	</sequence>
+	    </complexType>
+    </element>
+    
+    <complexType name="Address">
+    	<sequence>
+    		<element name="city" type="string"/>
+    		<element name="state" type="string"/>
+    		<element name="zipcode" type="string"/>
+    	</sequence>
+    </complexType>
+    
+  
+</schema>

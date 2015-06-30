@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:components="http://www.test.com/" 
+	targetNamespace="http://www.test.bank.com/" xmlns:tns="http://www.test.bank.com/" 
+	xsi:schemaLocation="http://www.test.com/ student.xsd"
+	elementFormDefault="qualified">
+
+   <element name="CreditRequest">
+	    <complexType>
+	    	<sequence>
+	    		<element name="ssn" type="string"></element>
+	    		<element name="fname" type="string"></element>
+	    		<element name="dob" type="string"></element>
+	    		<element name="zipcode" type="string"></element>
+	    	</sequence>
+	    </complexType>
+    </element>
+    
+     <element name="CreditResponse">
+	    <complexType>
+	    	<sequence>
+	    		<element name="noOfAccounts" type="int" minOccurs="1" maxOccurs="1"/>
+	    		<element name="creditScore" type="int"/>
+	    		<element name="providers" type="tns:Provider" minOccurs="0"  maxOccurs="unbounded"/>
+	    		<element name="zipcode" type="string"/>
+	    		<element name="status" type="tns:Status"/>
+	    		<element name="address" type="components:Address"/>
+	    	</sequence>
+	    </complexType>
+    </element>
+    
+     <complexType name="Provider">
+    	<sequence>
+    		<element name="name" type="string"/>
+    		<element name="score" type="int"/>
+    	</sequence>
+    </complexType>
+    
+      <complexType name="Status">
+    	<sequence>
+    		<element name="code" type="string"/>
+    		<element name="msg" type="string"/>
+    	</sequence>
+    </complexType>
+    
+  
+</schema>
